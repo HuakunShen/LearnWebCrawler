@@ -2,12 +2,14 @@
 from scrapy import Spider
 from scrapy.http import Request
 
+
 def product_info(response, value):
     return response.xpath('//th[text()="' + value + '"]/following-sibling::td/text()').extract_first()
 
 
-class BooksDataSpider(Spider):
+class BooksdataSpider(Spider):
     name = 'booksData'
+    # name = 'books'
     allowed_domains = ['books.toscrape.com']
     start_urls = ['http://books.toscrape.com']
 
@@ -58,5 +60,3 @@ class BooksDataSpider(Spider):
             'availability': availability,
             'number_of_reviews': number_of_reviews
         }
-
-
