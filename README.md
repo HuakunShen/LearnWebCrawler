@@ -17,9 +17,9 @@ After running the above command, a browser should show up, and it can be observe
 
 There are 1000 books on this website, divided into 50 pages. This crawler go to each page, take url of each book, recursively go to each book's page and retrieve detailed information of that book. Then go on to the next book on the page.
 
-After a page is down, get the url of next page button and go to next page and repeat the scraping process until all books are checked.
+After a page is explored, the crawler gets the url of `next page button`, go to next page and repeat the scraping process until all books are retrieved.
 
-And flag `-o` to specify where to export the retrieved data.
+Add flag `-o` to specify where to export the retrieved data.
 
 ```shell
 cd books_crawler2
