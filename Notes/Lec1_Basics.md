@@ -1,4 +1,4 @@
-# Lec1
+# Lec1 Basics
 
 ```python
 # http://quotes.toscrape.com/
