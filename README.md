@@ -70,3 +70,11 @@ With `close` function, it can be renamed.
 
 ## Using `items.py`
 
+```shell
+cd sample_items_spider
+scrapy crawl sample_items_spider
+```
+
+The code above retrieves authors' names from `quotes.toscrape.com`.
+
+Instead of using `yield` as I do previously, I use `items.py` instead.
