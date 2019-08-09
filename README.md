@@ -78,3 +78,17 @@ scrapy crawl sample_items_spider
 The code above retrieves authors' names from `quotes.toscrape.com`.
 
 Instead of using `yield` as I do previously, I use `items.py` instead.
+
+## Export Excel
+
+For details, see `./Note/Lec7_Export`
+
+```shell
+cd excel_export_demo
+scrapy crawl export_excel_demo -o items.csv
+```
+
+Save data as `csv`, then convert csv to `xlsx(excel)`
+
+
+
