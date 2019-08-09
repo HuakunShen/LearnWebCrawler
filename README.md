@@ -90,5 +90,15 @@ scrapy crawl export_excel_demo -o items.csv
 
 Save data as `csv`, then convert csv to `xlsx(excel)`
 
+## Download Image
 
+See `./download_image/README.md` for details
 
+```shell
+cd download_image
+sudo scrapy crawl books > ./log.txt
+```
+
+Images will be stored in `./download_image/books_crawler/books_crawler/downloaded_images`
+
+Check `log.txt` for exact location.
