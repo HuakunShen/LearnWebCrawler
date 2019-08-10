@@ -6,8 +6,6 @@
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 import scrapy
 from pymongo import MongoClient
-# from scrapy.crawler import settings
-# from scrapy import settings
 
 class MongoDBPipeline(object):
 

@@ -1,5 +1,11 @@
 # Databases
 
+## To Run For Both:
+
+```shell
+scrapy crawl spiderName -o outputfile.csv > log.txt 
+```
+
 To install SQL server on linux: `sudo apt-get install mysql-server`
 
 To install SQL connector on linux: `pip install mysql-connector-python`
@@ -47,4 +53,39 @@ sudo service mongodb start
 mongo		# Enter Mongo Shell
 sudo pip install pymongo		# install for python
 ```
+
+Details see `./booksCrawler_MongoDB`.
+
+In `pipelines.py`,
+
+```python
+import scrapy
+from pymongo import MongoClient
+class MongoDBPipeline(object):
+
+    def __init__(self):
+        self.connection = MongoClient(
+            'localhost',
+            27017
+        )
+        db = self.connection['books']
+        self.collection = db['products']
+
+    def process_item(self, item, spider):
+        self.collection.insert(dict(item))
+        return item
+```
+
+In `Books.py`, nothing changes.
+
+In `settings.py`,
+
+```python
+ITEM_PIPELINES = {
+   'booksCrawler_MongoDB.pipelines.MongoDBPipeline': 300,
+}
+# Specify where items are going to (MongoDBPipeline i.e. the class in pipeline.py).
+```
+
+
 

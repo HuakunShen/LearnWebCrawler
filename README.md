@@ -102,3 +102,30 @@ sudo scrapy crawl books > ./log.txt
 Images will be stored in `./download_image/books_crawler/books_crawler/downloaded_images`
 
 Check `log.txt` for exact location.
+
+## Store Data in Database
+
+Details see **Lec9** in Notes
+
+* SQL:
+
+  * ```shell
+    cd books_crawler2
+    scrapy crawl booksData4_SQL -o items.csv > log.txt
+    ```
+
+  * Make sure `mysql-server` is installed locally and service is started.
+
+  * Data will be stored in mySQL database 
+
+* MongoDB
+
+  * ```shell
+    cd booksCrawler_MongoDB
+    scrapy crawl booksData4_SQL -o items.csv > log.txt
+    ```
+
+  * Make sure `mongod` service is started locally
+
+  * Data will be stored in MongoDB
+
