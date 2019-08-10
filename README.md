@@ -129,3 +129,19 @@ Details see **Lec9** in Notes
 
   * Data will be stored in MongoDB
 
+## Scrapy User Agent
+
+```shell
+scrapy shell 'https://www.amazon.ca/gp/profile/amzn1.account.AERSRZ2IKWWLCTLHRZKEW4SXX23Q/ref=cm_cr_arp_d_gw_rgt?ie=UTF8'
+# the above won't give a valid response, try 
+view(response)		# this page will be blank
+```
+
+Go to `<https://www.whatismybrowser.com/detect/what-is-my-user-agent>` , to find out your user agent.
+
+```shell
+scrapy shell 'https://www.amazon.ca/gp/profile/amzn1.account.AERSRZ2IKWWLCTLHRZKEW4SXX23Q/ref=cm_cr_arp_d_gw_rgt?ie=UTF8' -s USER_AGENT="paste user agent here" # -s stands for setting
+```
+
+## Scrape Tables
+
