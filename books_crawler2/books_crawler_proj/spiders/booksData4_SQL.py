@@ -22,9 +22,9 @@ class Booksdata4SqlSpider(Spider):
             yield Request(absolute_url, callback=self.parse_book)
 
         # process next page
-        next_page_url = response.xpath('//a[text()="next"]/@href').extract_first()
-        absolute_next_page_url = response.urljoin(next_page_url)
-        yield Request(absolute_next_page_url)
+        # next_page_url = response.xpath('//a[text()="next"]/@href').extract_first()
+        # absolute_next_page_url = response.urljoin(next_page_url)
+        # yield Request(absolute_next_page_url)
 
     def parse_book(self, response):
         title = response.css('h1::text').extract_first()
@@ -58,7 +58,7 @@ class Booksdata4SqlSpider(Spider):
     def close(self, reason):
         csv_file = max(glob.iglob('*.csv'), key=os.path.getctime)
         print('debug, target file: ', csv_file)
-        mydb = SQL.connect(host='localhost', user='root', password='password', database='booksDB')
+        mydb = SQL.connect(host='localhost', user='huakun', password='', database='booksDB')
         cursor = mydb.cursor()
         with open(csv_file) as data_file:
             csv_data = csv.reader(data_file, delimiter=',')

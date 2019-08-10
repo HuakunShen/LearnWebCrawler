@@ -1,2 +1,2 @@
-debug, target file:  items.csv
-debug: total row added =  1001
+('debug, target file: ', 'items.csv')
+('debug: total row added = ', 21)

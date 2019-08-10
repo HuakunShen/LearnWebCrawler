@@ -1,4 +1,4 @@
-# MySQL
+# Databases
 
 To install SQL server on linux: `sudo apt-get install mysql-server`
 
@@ -36,5 +36,15 @@ def close(self, reason):
                 mydb.commit()
                 cursor.close()
                 mydb.close()
+```
+
+To install MongoDB on linux: 
+
+```shell
+sudo apt-get install mongodb
+sudo apt-get update
+sudo service mongodb start
+mongo		# Enter Mongo Shell
+sudo pip install pymongo		# install for python
 ```
 
