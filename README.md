@@ -11,7 +11,15 @@ scrapy crawl login
 
 After running the above command, a browser should show up, and it can be observed that in the top right corner, the `Login` button becomes `Logout` button, i.e. now it's logged in.
 
+## Selenium search Google with robot
 
+* make sure `selenium` is installed to current `python`
+* make sure `ChromeDriver` is downloaded and palced into a directory under path variable.
+
+```shell
+cd seleniumDemo
+python searchGoogle.py
+```
 
 ## Retrieve Data From <http://books.toscrape.com/>, Part 1
 
