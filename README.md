@@ -21,6 +21,14 @@ cd seleniumDemo
 python searchGoogle.py
 ```
 
+## Sign into U of T Acorn, and Enroll Course Automatically with Selenium
+
+```shell
+cd acorn_login
+python loginAcorn
+# make sure a password.py file is added that include your acorn username and password.
+```
+
 ## Retrieve Data From <http://books.toscrape.com/>, Part 1
 
 There are 1000 books on this website, divided into 50 pages. This crawler go to each page, take url of each book, recursively go to each book's page and retrieve detailed information of that book. Then go on to the next book on the page.
