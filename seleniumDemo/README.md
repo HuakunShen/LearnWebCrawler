@@ -1,7 +1,26 @@
 # Selenium
 Source: <https://cuiqingcai.com/5630.html>
+Sample Project: <https://github.com/Python3WebSpider/TaobaoProduct>, also described on the website in the previous line.
 * make sure `selenium` is installed to current `python`
 * make sure `ChromeDriver` is downloaded and palced into a directory under path variable.
+
+Since Chrome version 59, chrome has headless mode, i.e. browser won't be shown (opened visually).
+Include the following lines to change to headless mode.
+
+```python
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+browser = webdriver.Chrome(chrome_options=chrome_options)
+```
+
+To increase speed of spider (selenium), disable load image function, speed could be increased.
+
+```python
+SERVICE_ARGS = ['--load-images=false', '--disk-cache=true']
+browser = webdriver.PhantomJS(service_args=SERVICE_ARGS)
+```
+
+## Demos
 
 ```shell
 python searchGoogle.py      # search google with selenium
