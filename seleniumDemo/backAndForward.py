@@ -1,9 +1,10 @@
 import time
 from selenium import webdriver
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-browser = webdriver.Chrome(chrome_options=chrome_options)
+# chrome_options = webdriver.ChromeOptions()
+# chrome_options.add_argument('--headless')
+browser = webdriver.Chrome()
+# browser = webdriver.Chrome(chrome_options=chrome_options)
 
 # browser = webdriver.Chrome()
 browser.get('https://www.baidu.com/')
