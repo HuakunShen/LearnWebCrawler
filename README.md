@@ -21,6 +21,11 @@ cd seleniumDemo
 python searchGoogle.py
 ```
 
+## Download 2000 chapters of novel
+* Navigate to `download_novel` directory. There are two versions of code that do the same job.
+  One use iteration and the other uses recursion. Personally, I believe iteration saves more memory. 
+
+
 ## Retrieve Data From <http://books.toscrape.com/>, Part 1
 
 There are 1000 books on this website, divided into 50 pages. This crawler go to each page, take url of each book, recursively go to each book's page and retrieve detailed information of that book. Then go on to the next book on the page.
@@ -152,4 +157,19 @@ scrapy shell 'https://www.amazon.ca/gp/profile/amzn1.account.AERSRZ2IKWWLCTLHRZK
 ```
 
 ## Scrape Tables
+
+scrape a table from `<https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>`
+
+```shell
+cd scrapeTable
+scrapy crawl wiki -o output.json
+```
+
+## Scrape JSON
+
+```shell
+cd scrapeJSON
+scrapy crawl tweets -o output.csv
+# EASY
+```
 
