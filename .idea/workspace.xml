@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2015dcc-9dbf-48c7-8b91-7d7ecc2ff923" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/web_crawler.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lec11_FormRequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notes/Lec10_JSON.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/download_novel/download_novel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/download_novel/download_novel2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/output.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapeJSON/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapeJSON/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapeJSON/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapeJSON/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapeJSON/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapeJSON/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapeJSON/spiders/tweets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapeJSON/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/items.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download_novel/download_novel.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_novel/download_novel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download_novel/download_novel2.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_novel/download_novel2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565492631183</updated>
       <workItem from="1565492633357" duration="818000" />
-      <workItem from="1565989623065" duration="9689000" />
+      <workItem from="1565989623065" duration="12577000" />
     </task>
     <servers />
   </component>

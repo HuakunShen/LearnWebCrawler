@@ -1,11 +1,9 @@
 import requests
-import time
 from pyquery import PyQuery as pq
 from urllib.parse import urljoin, urlparse
 
 
 def parse_page(count, url, title):
-    # try:
     r = requests.get(url)
     r.encoding = 'GBK'
     page = pq(r.text)
@@ -15,8 +13,6 @@ def parse_page(count, url, title):
     with open(filename, 'w') as f:
         f.write(title + '\n\n\n')
         f.write(text)
-    # except Exception as e:
-    #     pass
 
 
 if __name__ == "__main__":
@@ -34,4 +30,3 @@ if __name__ == "__main__":
         page_url = urljoin(base_url, item.attr('href'))
         parse_page(file_count, page_url, item.text())
         file_count += 1
-        # time.sleep(1)
