@@ -1,4 +1,5 @@
-
-download_novel/chapters/
-
+acorn_login/\.idea/
+acorn_login/password\.py
+acorn_login/__pycache__/password\.cpython-37\.pyc
 download_novel/chapters2/
+download_novel/chapters/

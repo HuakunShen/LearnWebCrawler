@@ -21,6 +21,16 @@ cd seleniumDemo
 python searchGoogle.py
 ```
 
+
+```
+## Sign into U of T Acorn, and Enroll Course Automatically with Selenium
+
+```shell
+cd acorn_login
+# make sure a password.py file is added that include your acorn username and password.
+python loginAcorn
+
+
 ## Download 2000 chapters of novel
 * Navigate to `download_novel` directory. There are two versions of code that do the same job.
   One use iteration and the other uses recursion. Personally, I believe iteration saves more memory. 
