@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2015dcc-9dbf-48c7-8b91-7d7ecc2ff923" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/download_novel/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download_novel/download_novel.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_novel/download_novel.py" afterDir="false" />
-    </list>
+    <list default="true" id="d2015dcc-9dbf-48c7-8b91-7d7ecc2ff923" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +124,7 @@
       <updated>1565492631183</updated>
       <workItem from="1565492633357" duration="818000" />
       <workItem from="1565989623065" duration="12577000" />
-      <workItem from="1566056256518" duration="1313000" />
+      <workItem from="1566056256518" duration="1411000" />
     </task>
     <servers />
   </component>

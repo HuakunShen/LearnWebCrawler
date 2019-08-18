@@ -10,7 +10,7 @@ def parse_page(count, url, title):
     content = page('#content')
     text = content.text()
     filename = "./chapters/{0}. {1}.txt".format(str(count), title)
-    with open(filename, 'w', encoding="GBK") as f:
+    with open(filename, 'w') as f:
         f.write(title + '\n\n\n')
         f.write(text)
 
